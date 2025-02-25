@@ -1,15 +1,21 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Alata, Josefin_Sans } from "next/font/google";
+
+import Header from "@/components/Header";
+import HeroSection from "@/components/hero-section";
+
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const alata = Alata({
+  variable: "--font-alata",
   subsets: ["latin"],
+  weight: "400",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const JosefinSans = Josefin_Sans({
+  variable: "--font-josefin-sans",
   subsets: ["latin"],
+  weight: "300",
 });
 
 export const metadata: Metadata = {
@@ -24,9 +30,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${alata.variable} ${JosefinSans.variable} antialiased`}>
+        <div className="bg-[url(/images/mobile/image-hero.jpg)] bg-cover bg-center bg-no-repeat lg:bg-[url(/images/desktop/image-hero.jpg)]">
+          <Header />
+          <HeroSection />
+        </div>
         {children}
       </body>
     </html>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Alata, Josefin_Sans } from "next/font/google";
 
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import HeroSection from "@/components/hero-section";
 import InteractiveVR from "@/components/interactive-vr";
@@ -42,6 +43,7 @@ export default function RootLayout({
         <InteractiveVR />
         <OurCreations />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -5,7 +5,7 @@ export default function HeroSection() {
       aria-label="Hero"
     >
       <div className="flex items-center justify-start border-2 border-white px-6 py-6 lg:px-10 lg:py-10">
-        <h1 className="w-[15rem] font-[Josefin_Sans] text-4xl leading-tight font-light text-white uppercase lg:w-[22rem] lg:text-5xl">
+        <h1 className="w-[15rem] font-[Josefin_Sans] text-4xl leading-tight font-light text-white uppercase sm:w-[22rem] sm:text-5xl">
           Immersive experiences that deliver
         </h1>
       </div>

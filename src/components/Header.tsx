@@ -13,7 +13,7 @@ export const navLinks = [
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between px-6 py-10 lg:px-40 lg:py-16">
+    <header className="flex items-center justify-between px-6 py-10 sm:px-10 lg:px-40 lg:py-16">
       <Link href="/" aria-label="Home">
         <Image
           src="/images/logo.svg"

@@ -4,6 +4,7 @@ import { Alata, Josefin_Sans } from "next/font/google";
 import Header from "@/components/Header";
 import HeroSection from "@/components/hero-section";
 import InteractiveVR from "@/components/interactive-vr";
+import OurCreations from "@/components/our-creation";
 
 import "./globals.css";
 
@@ -39,6 +40,7 @@ export default function RootLayout({
           <HeroSection />
         </div>
         <InteractiveVR />
+        <OurCreations />
         {children}
       </body>
     </html>

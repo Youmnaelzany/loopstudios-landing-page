@@ -12,9 +12,9 @@ import { navLinks } from "./Header";
 
 export default function Footer() {
   return (
-    <footer className="flex h-auto w-full flex-col items-center justify-center gap-y-12 bg-black px-6 py-14 lg:flex-row lg:justify-between lg:px-40 lg:py-12">
+    <footer className="flex h-auto w-full flex-col items-center justify-center gap-y-12 bg-black px-6 py-14 sm:flex-row sm:justify-between lg:px-40 lg:py-12">
       {/* Logo & Navigation Links */}
-      <div className="flex flex-col items-center justify-center gap-y-8 lg:items-start lg:justify-start">
+      <div className="flex flex-col items-center justify-center gap-y-8 sm:items-start sm:justify-start">
         <Link href="/" aria-label="Home">
           <Image
             src="/images/logo.svg"
@@ -25,7 +25,7 @@ export default function Footer() {
           />
         </Link>
         <nav aria-label="Main navigation" className="">
-          <ul className="flex flex-col items-center gap-y-4 lg:flex-row lg:gap-x-8">
+          <ul className="flex flex-col items-center gap-y-4 sm:flex-row sm:gap-x-8">
             {navLinks.map((navLink) => (
               <li key={navLink.name}>
                 <Link
@@ -40,7 +40,7 @@ export default function Footer() {
         </nav>
       </div>
       {/* Social Media Links & Copyrights */}
-      <div className="flex flex-col items-center justify-center gap-y-4 lg:items-end lg:justify-end lg:gap-y-10">
+      <div className="flex flex-col items-center justify-center gap-y-4 sm:items-end sm:justify-end sm:gap-y-10">
         {/* Social Media Links */}
         <div className="flex w-36 items-center justify-center gap-x-4">
           <Link

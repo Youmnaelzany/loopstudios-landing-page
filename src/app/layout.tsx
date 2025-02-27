@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${alata.variable} ${JosefinSans.variable} min-h-screen max-w-screen-2xl antialiased`}
+        className={`${alata.variable} ${JosefinSans.variable} min-h-screen max-w-[90rem] antialiased`}
       >
         <div className="bg-[#E5EAF1] bg-[url(/images/mobile/image-hero.jpg)] bg-cover bg-no-repeat bg-blend-multiply lg:bg-[url(/images/desktop/image-hero.jpg)]">
           <Header />

@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
 import { Alata, Josefin_Sans } from "next/font/google";
 
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import HeroSection from "@/components/hero-section";
-import InteractiveVR from "@/components/interactive-vr";
-import OurCreations from "@/components/our-creation";
-
 import "./globals.css";
 
 const alata = Alata({
@@ -36,14 +30,7 @@ export default function RootLayout({
       <body
         className={`${alata.variable} ${JosefinSans.variable} min-h-screen max-w-[90rem] antialiased`}
       >
-        <div className="bg-[#E5EAF1] bg-[url(/images/mobile/image-hero.jpg)] bg-cover bg-no-repeat bg-blend-multiply lg:bg-[url(/images/desktop/image-hero.jpg)]">
-          <Header />
-          <HeroSection />
-        </div>
-        <InteractiveVR />
-        <OurCreations />
         {children}
-        <Footer />
       </body>
     </html>
   );

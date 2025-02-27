@@ -19,7 +19,7 @@ export default function InteractiveVR() {
           />
         </picture>
       </div>
-      <div className="interactive-vr flex h-auto w-auto flex-col items-center justify-center gap-y-4 bg-white px-6 text-center xl:relative xl:bottom-0 xl:-left-30 xl:justify-start xl:pt-24 xl:pr-0 xl:pb-0 xl:pl-24 xl:text-left">
+      <div className="interactive-vr flex h-auto w-auto flex-col items-center justify-center gap-y-4 bg-white px-6 text-center xl:relative xl:-bottom-1 xl:-left-30 xl:justify-start xl:pt-17 xl:pr-0 xl:pb-0 xl:pl-17 xl:text-left 2xl:pt-24 2xl:pl-24">
         <h2 className="w-68 font-[Josefin_Sans] text-[2rem] leading-8 font-light text-black uppercase xl:w-[27rem] xl:text-[3rem] xl:leading-12">
           The leader in interactive VR
         </h2>
